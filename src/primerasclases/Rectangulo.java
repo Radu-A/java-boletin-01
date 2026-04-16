@@ -12,14 +12,14 @@ public class Rectangulo {
 	}
 	
 	public Rectangulo (int base, int altura) {
-		this.base = base;
-		this.altura = altura;
-		this.color = "blanco";
+		this(base, altura, "blanco");
 	}
 	
-	public Rectangulo () {
-		this.base = 1;
-		this.altura = 1;
-		this.color = "blanco";
+	public Rectangulo() {
+		this(1, 1, "blanco");
+	}
+	
+	public void show() {
+		System.out.printf("Rectángulo %s de %d x %d%n", this.color,  this.base, this.altura );
 	}
 }
