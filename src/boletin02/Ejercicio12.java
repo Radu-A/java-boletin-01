@@ -14,18 +14,26 @@ public class Ejercicio12 {
 		int resultLength = evenLength + oddLength;
 		int[] resultArray = new int[resultLength];
 		
-		for (int i = 0; i <= evenLength * 2; i++) {
-			if (i % 2 == 0 && evenCount <= evenLength) {
-				evenArray[i] = i;
+		for (int i = 1; i <= evenLength * 2; i++) {
+			if (i % 2 == 0 && evenCount < evenLength) {
+				evenArray[evenCount] = i;
 				evenCount++;
 			}
-			if (i % 2 != 0 && oddCount <= oddLength) {
-				oddArray[i] = i;
+			if (i % 2 != 0 && oddCount < oddLength) {
+				oddArray[oddCount] = i;
 				oddCount++;
 			}
-			
 		}
 		
+		for (int number : evenArray) {
+			System.out.printf("%d ", number);
+		}
+
+		System.out.printf("%n");
+		
+		for (int number : oddArray) {
+			System.out.printf("%d ", number);
+		}
 	}
 
 }
