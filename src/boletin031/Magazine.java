@@ -1,4 +1,4 @@
-package boletin0301;
+package boletin031;
 
 public class Magazine extends Publication {
 	
